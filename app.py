@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import Flask, jsonify
 from flask_cors import CORS
 
 app = Flask(__name__)
@@ -10,7 +10,11 @@ def PegarPessoalDosRanko():
         # Top: todos
         # Top: 10
         # Top: 5
-    return {'fsd': 'teu cu'}, 200
+    ranking = [
+        {"nome": "João", "pontos": 100},
+        {"nome": "Maria", "pontos": 90}
+    ]
+    return jsonify(ranking)  # ✅ retorna algo válido
 
 
 @app.route('/rank/add', methods=['POStT'])
