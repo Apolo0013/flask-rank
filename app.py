@@ -10,7 +10,7 @@ def PegarPessoalDosRanko():
         # Top: todos
         # Top: 10
         # Top: 5
-    pass
+    return {'fsd': 'teu cu'}, 200
 
 
 @app.route('/rank/add', methods=['POStT'])
