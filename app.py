@@ -18,3 +18,6 @@ def AddAPessoalDB():
     # - 1 add ele em um json simple
     # - 2 verificar se ele ja esta no banco de dados
     pass
+
+if __name__ == '__main__':
+    app.run(app)
